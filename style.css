@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    font-size: 0.9em;
+    line-height: 27px;
+    color: #adabab;
+}
+h3, h4{
+    color: #2f2f2f;
+}
+h3{
+    line-height: 30px;
+}
+header{
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    min-height: 100vh;
+}
+header > div:nth-child(1){
+    background: #dedede;
+    padding: 3em 1em 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+header > div > div{
+    position: relative;
+    z-index: 2;
+}
+.img-main{
+    position: absolute;
+    top: 0;
+    right: 2em;
+    width: 40%;
+    z-index: 0;
+}
+header h1{
+    color: #fff;
+    font-size: clamp(3.5rem, 10vw + 1em, 7rem);
+    margin: 0;
+    letter-spacing: 0.2em;
+}
+.description{
+    max-width: 25em;
+    margin: 2em 0;
+}
+header .panels{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.image-panel img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    max-width: 15em;
+    filter: drop-shadow(0 0 15px rgba(0,0, 0, 0.5));
+}
+.panels > div:nth-child(1){
+    grid-template-rows: 4fr 3fr;
+
+}
+.panels > div:nth-child(2){
+    grid-template-rows: 3fr 4fr;
+}
+.image-panel{
+    position: relative;
+    overflow: hidden;
+}
+.text-panel{
+    padding: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panels > div:nth-child(1),
+.image-panel{
+    background: #f2535d;
+
+}
+.panels > div:nth-child(2),
+.image-panel{
+    background: #474244;
+
+}
+.panels > div:nth-child(2),
+.text-panel{
+    background: #1f1f21;
+    text-align: center;
+
+}
+.panels > div:nth-child(1) h3
+{
+  margin: 0;
+  color: #fff;
+}
+.panels > div:nth-child(1),
+.highlighted{
+
+    color: #f2535d;
+}
+.panels > div:nth-child(2),
+.text-panel{
+    background: #fff;
+
+}
+.player h4{
+    margin: 0.5em;
+}
+.player small{
+    color: #f2535d;
+}
+.play-btn{
+    background: #fff;
+    height: 100%;
+    width: 4.5em;
+    margin-right: 0.7em;
+    display: flex;
+    justify-content: center;
+}
